@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  php_swoole:
+    build:
+      dockerfile: ./build/Dockerfile
+      context: .
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "8080:8080"
