@@ -7,9 +7,9 @@ RUN apt-get install vim -y && \
     apt-get install libssl-dev -y && \
     apt-get install wget -y
 
-RUN cd /tmp && wget https://pecl.php.net/get/swoole-4.2.9.tgz && \
-    tar zxvf swoole-4.2.9.tgz && \
-    cd swoole-4.2.9  && \
+RUN cd /tmp && wget https://pecl.php.net/get/swoole-4.7.1.tgz && \
+    tar zxvf swoole-4.7.1.tgz && \
+    cd swoole-4.7.1  && \
     phpize  && \
     ./configure  --enable-openssl && \
     make && make install
